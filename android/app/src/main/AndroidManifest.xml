@@ -8,7 +8,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name=".Application"
-        android:label="Corona Tracker by One Planet"
+        android:label="Corona Tracker"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
