@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "271606903321",
+    "firebase_url": "https://one-planet-us.firebaseio.com",
+    "project_id": "one-planet-us",
+    "storage_bucket": "one-planet-us.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271606903321:android:c83e9ce0b0515727f1b088",
+        "android_client_info": {
+          "package_name": "us.oneplanet.corona.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271606903321-hchsoekcdbkto0rhln3f4sdhu3cjqahf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "us.oneplanet.corona.app",
+            "certificate_hash": "5e3a6e457f3c65b8d5fdf1d0d66f18f274cccb03"
+          }
+        },
+        {
+          "client_id": "271606903321-qbk8g1adm6rh69l4s194qnecl7hfl9cd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBueR2xfK1ZiCHYw7hxbJE9RT15tW0xw5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271606903321-qbk8g1adm6rh69l4s194qnecl7hfl9cd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "271606903321-j8ipcmc2l66rc64i22ab5q6928voj7nk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "us.oneplanet.corona.app",
+                "app_store_id": "1505198904"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
