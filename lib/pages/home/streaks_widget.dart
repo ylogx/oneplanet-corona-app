@@ -30,10 +30,10 @@ class StreaksWidget extends StatelessWidget {
     var updatedAtDateTimeString = DateFormat.yMMMMEEEEd().format(updatedAtDateTime.toLocal()) + " " + DateFormat.Hms().format(updatedAtDateTime.toLocal());
 //    updatedAtDateTimeString = DateFormat.E().format(updatedAtDateTime.toLocal());
     var output = <Widget>[
-        showStat("Cases", data.Cases),
-        showStat("Active", data.Active),
-        showStat("Deaths", data.Deaths),
-        showStat("Recovered", data.Recovered),
+        showStat("Cases", data.Cases, CupertinoColors.activeOrange),
+        showStat("Active", data.Active, CupertinoColors.systemYellow),
+        showStat("Deaths", data.Deaths, CupertinoColors.destructiveRed),
+        showStat("Recovered", data.Recovered, CupertinoColors.activeGreen),
         //showStat("Updated At", updatedAtDateTimeString),
         Text(
           "Updated At: ${updatedAtDateTimeString}",
@@ -46,7 +46,9 @@ class StreaksWidget extends StatelessWidget {
     return output;
   }
 
-  Padding showStat(title, numbers) {
+  Padding showStat(title, numbers, color) {
+    var normalColor = isDark ? CupertinoColors.white : CupertinoColors.black;
+    var textColor = color == null ? normalColor : color;
     return Padding(
         padding: const EdgeInsets.only(bottom: TEXT_PADDING),
         child: Column(
@@ -58,7 +60,7 @@ class StreaksWidget extends StatelessWidget {
               fontSize: 20,
 //              color: isDark ? CupertinoColors.darkBackgroundGray : CupertinoColors.extraLightBackgroundGray,
 //              color: isDark ? CupertinoColors.secondaryLabel : CupertinoColors.systemGrey6,
-              color: isDark ? CupertinoColors.white : CupertinoColors.black,
+              color: normalColor,
             ),
           ),
           Text(
@@ -66,7 +68,7 @@ class StreaksWidget extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 60,
-              color: isDark ? CupertinoColors.white : CupertinoColors.black,
+              color: textColor,
             ),
           ),
         ],

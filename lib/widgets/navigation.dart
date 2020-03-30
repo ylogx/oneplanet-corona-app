@@ -18,23 +18,20 @@ class OnePlanetNavigationBar extends StatelessWidget {
           ),
           Row(
             children: <Widget>[
-              CupertinoButton(
-                key: Key("logout_button"),
-                onPressed: () async {
-                  logout(context);
-                },
-                child: const Icon(Icons.exit_to_app, size: 18.0),
-                //const Text("Logout",
-                //    textAlign: TextAlign.right, style: TextStyle(color: CupertinoColors.activeGreen, fontSize: 15)),
-              ),
+//              CupertinoButton(
+//                key: Key("logout_button"),
+//                onPressed: () async {
+//                  logout(context);
+//                },
+//                child: const Icon(Icons.exit_to_app, size: 18.0),
+//                //const Text("Logout",
+//                //    textAlign: TextAlign.right, style: TextStyle(color: CupertinoColors.activeGreen, fontSize: 15)),
+//              ),
               Padding(
                 padding: const EdgeInsets.only(right: 2 * TEXT_PADDING),
                 child: ClipRRect(
                   borderRadius: new BorderRadius.circular(20.0),
-                  child: Image.network(
-                    "https://lh3.googleusercontent.com/a-/AOh14GiT52pchRLxZWpQXIDitqEuGesjUnahWyb7BgB377I=s96-c",
-                    height: 25.0,
-                  ),
+                  child: Image.asset('assets/corona.png', height: 25.0),
                 ),
               ),
             ],
