@@ -8,7 +8,6 @@ import './home.dart';
 class AppHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return HomePage();
     developer.log("Showing home page with bottom navigation bar", name: 'app.dart');
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(

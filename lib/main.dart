@@ -24,7 +24,7 @@ class AppStartPage extends StatelessWidget {
         primaryColor: CupertinoColors.activeGreen,
         primaryContrastingColor: CupertinoColors.systemGreen,
       ),
-      home: AuthSplashTab(_firebaseMessaging),
+      home: HomePage(),
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: analytics),
       ],
