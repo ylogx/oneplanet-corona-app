@@ -6,7 +6,7 @@ This was sprint project to hash out the code and release an (Android & iOS) app 
 ### Project Repos
 
 * ***App***: [ylogx/oneplanet-corona-app](https://github.com/ylogx/oneplanet-corona-app)
-  - The app is written in dart and works on both Android & iOS. App supports dark & light mode.
+  - The app is written in dart with [Flutter][flutter] framework and works on both Android & iOS. App supports dark & light mode.
 * API Backend: [ylogx/oneplanet-corona-backend](https://github.com/ylogx/oneplanet-corona-backend)
   - The app reads data from backend REST API written in GoLang, containerized using [Docker][docker] and deployed on Google Cloud using [Cloud Run][gc-cloud-run].
 * App Webpage: [ylogx/oneplanet-corona-web](https://github.com/ylogx/oneplanet-corona-web)
@@ -30,3 +30,4 @@ There are tons of useful commands in Makefile like `make apk` for building relea
 [gc-cloud-run]: https://cloud.google.com/run/
 [docker]: https://shubham.chaudhary.xyz/blog/docker/101
 [privacy-page]: https://corona.oneplanet.us/privacy
+[flutter]: https://flutter.dev/
